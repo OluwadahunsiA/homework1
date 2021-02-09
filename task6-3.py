@@ -1,7 +1,18 @@
-def int_func(*args):
-    for vals in args:
-        print(vals.title())
+def int_func(word):
+    words = 'abcdefghijklmnopqrstuvwxyz'
+    empty = []
+    for letter in word.split():
+        if not set(letter).difference(words):
+            empty.append(letter.title())
+        else:
+            continue
+    print(' '.join(empty))
 
+
+int_func('hello p1 you1 are good')
+
+# for vals in args:
+#     print(vals.title())
 
 # OR
 
@@ -13,7 +24,3 @@ def int_func(*args):
 #             print(vals.title())
 #         else:
 #             print('Enter the right thing')
-
-
-int_func('he is a nice boy and you really have to meet him',
-         'you are nice', 'he', 'they are your friend')

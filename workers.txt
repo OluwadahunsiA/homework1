@@ -1,0 +1,7 @@
+James 20000
+Alex 50000
+Mark 80000
+Bixie 100000
+Alexa 13000
+Niall 12000
+Ronge 10000
